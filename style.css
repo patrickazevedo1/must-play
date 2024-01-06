@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+* { 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    list-style-type: none;
+    color: white;
+}
+
+body {
+    background-color: rgba(24, 24, 24, 1);
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+header > div {
+    margin-bottom: 20px;
+}
+
+button {
+    border: none;
+    background-color: transparent;
+}
+
+#inputText {
+    width: 280px;
+    font-size: 20px;
+    padding: 5px;
+    color: black;
+    outline: none;
+    margin-right: 10px;
+}
+
+.bx{
+    font-size: 20px;
+    cursor: pointer;
+}
+
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+ul {
+    width: 95%;
+    display: grid;
+    grid-template-columns: 1fr;
+    background-color: #4e4e4e;
+    border-radius: 7px;
+}
+
+li {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    margin: 7px;
+}
+
+span {
+    font-size: 23px;
+    padding-left: 10px;
+}
+
+input[type="checkbox"] {
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    border: solid 2px #888888;
+    cursor: pointer;
+}
+
+input[type="checkbox"]:checked{
+    background-image: url(imgs/done_FILL0_wght400_GRAD0_opsz24.png);
+    background-size: contain;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    background-color: #6b6b6b;
+    opacity: 0.5;
+}
+
+input[type="checkbox"]:checked + span {
+    text-decoration: line-through;
+    opacity: 0.5;
+}
+
+@media screen and (min-width: 750px){
+    ul {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media screen and (min-width: 1250px){
+    ul {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
